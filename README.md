@@ -31,37 +31,37 @@ ssh-keygen -t rsa -b 2048 -f ~/.ssh/aws
 
 ### Terraform Commands
 
-* **Initialize Terraform**:
+* **Initialize Terraform and download required providers**:
 
 ```bash
 terraform init
 ```
 
-* **Format Terraform files**:
+* **Format Terraform files for readability**:
 
 ```bash
 terraform fmt
 ```
 
-* **Validate Terraform configuration**:
+* **Validate the Terraform configuration for errors**:
 
 ```bash
 terraform validate
 ```
 
-* **Plan Terraform deployment**:
+* **Preview the changes Terraform will make**:
 
 ```bash
 terraform plan
 ```
 
-* **Apply Terraform configuration to create resources**:
+* **Apply the configuration to create EC2 instances**:
 
 ```bash
 terraform apply
 ```
 
-* **Destroy Terraform resources after lab completion**:
+* **Remove all resources created by Terraform**:
 
 ```bash
 terraform destroy
@@ -95,9 +95,41 @@ ansible all -i inventory/hosts.yml -m ping
 <img width="1169" height="923" alt="image" src="https://github.com/user-attachments/assets/4a03f5d6-63af-4e9a-8e70-866b6e284592" />
 <img width="1137" height="951" alt="image" src="https://github.com/user-attachments/assets/3fed45ed-91af-460c-a8bb-b8a78d67b2aa" />
 
+## Repository Structure
 
+            
+- ansible.cfg
+- playbook.yml
+- terraform.tfstate   
+- files/
+- inventory/
+- playbooks/
+- templates/
+
+### ansible/files/
+- index.html
+- nginx.conf
+
+### ansible/inventory/
+- hosts.yml
+
+### ansible/playbooks/
+- webserver.yml
+
+### ansible/templates/
+- index.html.j2
+
+### scripts/
+- delete_lab_key
+- import_lab_key
+
+### terraform/
+- main.tf
+- terraform.tfstate          
+- terraform.tfstate.backup   
 
 ---
+
 
 ## Notes
 
