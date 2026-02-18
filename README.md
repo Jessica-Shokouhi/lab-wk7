@@ -93,7 +93,6 @@ ansible all -i inventory/hosts.yml -m ping
 ## Screenshot
 
 <img width="1169" height="923" alt="image" src="https://github.com/user-attachments/assets/4a03f5d6-63af-4e9a-8e70-866b6e284592" />
-<img width="1137" height="951" alt="image" src="https://github.com/user-attachments/assets/3fed45ed-91af-460c-a8bb-b8a78d67b2aa" />
 
 ## Repository Structure (after running ls -R)
 #### ansible/
