@@ -95,38 +95,31 @@ ansible all -i inventory/hosts.yml -m ping
 <img width="1169" height="923" alt="image" src="https://github.com/user-attachments/assets/4a03f5d6-63af-4e9a-8e70-866b6e284592" />
 <img width="1137" height="951" alt="image" src="https://github.com/user-attachments/assets/3fed45ed-91af-460c-a8bb-b8a78d67b2aa" />
 
-## Repository Structure
-
-            
+## Repository Structure (after running ls -R)
+ansible/
 - ansible.cfg
 - playbook.yml
-- terraform.tfstate   
+- terraform.tfstate
 - files/
 - inventory/
 - playbooks/
 - templates/
-
-### ansible/files/
+ansible/files/
 - index.html
 - nginx.conf
-
-### ansible/inventory/
+ansible/inventory/
 - hosts.yml
-
-### ansible/playbooks/
+ansible/playbooks/
 - webserver.yml
-
-### ansible/templates/
+ansible/templates/
 - index.html.j2
-
-### scripts/
+scripts/
 - delete_lab_key
 - import_lab_key
-
-### terraform/
+terraform/
 - main.tf
-- terraform.tfstate          
-- terraform.tfstate.backup   
+- terraform.tfstate
+- terraform.tfstate.backup
 
 ---
 
