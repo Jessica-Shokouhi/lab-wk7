@@ -121,6 +121,16 @@ ansible all -i inventory/hosts.yml -m ping
 - terraform.tfstate
 - terraform.tfstate.backup
 
+
+## Cleanup
+
+After finishing the lab:
+
+```bash
+terraform destroy       # We Remove all EC2 instances
+./scripts/delete_lab_key aws   # Remove SSH key from AWS
+
+```
 ---
 
 
